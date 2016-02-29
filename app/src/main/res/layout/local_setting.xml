@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bizan.mobile10.sudachi.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地域設定"
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="都道府県"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="決定"
+        android:id="@+id/button"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="22dp" />
+
+</LinearLayout>
