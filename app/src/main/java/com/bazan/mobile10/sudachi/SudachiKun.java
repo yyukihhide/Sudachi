@@ -36,9 +36,9 @@ public class SudachiKun extends SurfaceView implements SurfaceHolder.Callback, R
         mContext = context;
         //画像の読み込み
         Resources r = getResources();
-        image[0] = BitmapFactory.decodeResource(r, R.drawable.sudachikun1);
-        image[1] = BitmapFactory.decodeResource(r, R.drawable.sudachikun2);
-        image[2] = BitmapFactory.decodeResource(r, R.drawable.sudachikun3);
+        image[0] = BitmapFactory.decodeResource(r, R.drawable.mushi_game);
+        image[1] = BitmapFactory.decodeResource(r, R.drawable.mushi_dead);
+        image[2] = BitmapFactory.decodeResource(r, R.drawable.mushi_dead);
         //サーフェイスフォルダーの準備
         holder = getHolder();
         holder.addCallback(this);

@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         bug = (ImageView) findViewById(R.id.maimvbug);
         bug.setScaleX(0.2F);
         bug.setScaleY(0.2F);
-        bug.setBackgroundResource(R.drawable.tree2);
+        //todo gazou
+        //bug.setBackgroundResource(R.drawable.tree2);
 
 
         fab = (FloatingActionButton) findViewById(R.id.mafab);

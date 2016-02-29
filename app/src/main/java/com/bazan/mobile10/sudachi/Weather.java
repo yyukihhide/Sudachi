@@ -46,11 +46,11 @@ public class Weather extends ActionBarActivity {
     ArrayAdapter<String> adapter;
 
     // ログ出力用のタグ
-    private static final String TAG = Weather.class.getSimpleName();
+    private static final String TAG = MainActivity.class.getSimpleName();
 
 
     //  Volleyでリクエスト時に設定するタグ名、キャンセル時に利用 クラス名をタグ指定
-    private static final Object TAG_REQUEST_QUEUE = Weather.class.getName();
+    private static final Object TAG_REQUEST_QUEUE = MainActivity.class.getName();
     private final String URL_API = "http://weather.livedoor.com/forecast/" +
             "webservice/json/v1?city=360010";
     // Volleyへ渡すタグ
@@ -59,7 +59,7 @@ public class Weather extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.weather);
+        setContentView(R.layout.activity_main);
 
         Log.e(TAG, "onCreate");
 
@@ -69,7 +69,7 @@ public class Weather extends ActionBarActivity {
         // 予報
         ListView listview_forecasts = (ListView) findViewById(R.id.listview_forecasts);
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1);
-        listview_forecasts.setAdapter(adapter);
+        //listview_forecasts.setAdapter(adapter);
         // 天気概況
         textview_description = (TextView) findViewById(R.id.textview_description);
 
